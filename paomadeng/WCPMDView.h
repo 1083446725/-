@@ -4,7 +4,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PaoMaDengView : UIView
+@interface WCPMDView : UIView
 
 /**
  跑马灯文字
@@ -15,7 +15,7 @@
 /**
  字体大小 默认13
  */
-@property (nonatomic) CGFloat font;
+@property (nonatomic, strong) UIFont *textFont;
 
 
 /**
@@ -28,11 +28,20 @@
  */
 @property (nonatomic, strong) UIColor *bgColor;
 
+/**
+ 字体对齐
+ */
+@property(nonatomic) NSTextAlignment textAlignment;
 
 /**
  滚动次数，默认是循环滚动
  */
 @property (nonatomic) float repeatCount;
+
+/**
+ 滚动速度，默认是0.05
+ */
+@property (nonatomic) float speed;
 
 /**
  结束动画

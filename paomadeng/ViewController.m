@@ -7,11 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "PaoMaDengView.h"
+#import "WCPMDView.h"
 
 @interface ViewController ()
 
-@property (nonatomic, strong) PaoMaDengView *p;
+@property (nonatomic, strong) WCPMDView *p;
 
 @property (nonatomic) BOOL start;
 
@@ -22,9 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    PaoMaDengView *p = [[PaoMaDengView alloc] initWithFrame:CGRectMake(50, 200, 300, 50)];
-    p.text = @"人生若只如初人生若只如初人生若只如初人生若只如初人生若只如初人生";
+    self.start = YES;
+    WCPMDView *p = [[WCPMDView alloc] initWithFrame:CGRectMake(50, 200, 100, 50)];
+    p.text = @"人生若人生人生若---";
     p.repeatCount = 1;
+    p.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:p];
     self.p = p;
 }
@@ -33,11 +35,17 @@
     [super touchesBegan:touches withEvent:event];
     if (self.start == YES) {
         self.start = NO;
+        
+        self.p.textColor = [UIColor blueColor];
+        self.p.bgColor = [UIColor whiteColor];
         [self.p startAction];
     } else {
         [self.p stopAction];
+        self.p.textColor = [UIColor blackColor];
+        self.p.bgColor = [UIColor greenColor];
         self.start = YES;
     }
 }
 
 @end
+

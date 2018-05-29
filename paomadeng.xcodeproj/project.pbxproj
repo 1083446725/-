@@ -15,7 +15,7 @@
 		E9E7901420B8F0AB007F89AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7901320B8F0AB007F89AC /* main.m */; };
 		E9E7901E20B8F0AB007F89AC /* paomadengTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7901D20B8F0AB007F89AC /* paomadengTests.m */; };
 		E9E7902920B8F0AB007F89AC /* paomadengUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7902820B8F0AB007F89AC /* paomadengUITests.m */; };
-		E9E7903820B8F129007F89AC /* PaoMaDengView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7903720B8F129007F89AC /* PaoMaDengView.m */; };
+		E9E7904F20BD462A007F89AC /* WCPMDView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7904D20BD4629007F89AC /* WCPMDView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		E9E7902420B8F0AB007F89AC /* paomadengUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = paomadengUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E7902820B8F0AB007F89AC /* paomadengUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = paomadengUITests.m; sourceTree = "<group>"; };
 		E9E7902A20B8F0AB007F89AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9E7903620B8F129007F89AC /* PaoMaDengView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaoMaDengView.h; sourceTree = "<group>"; };
-		E9E7903720B8F129007F89AC /* PaoMaDengView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaoMaDengView.m; sourceTree = "<group>"; };
+		E9E7904D20BD4629007F89AC /* WCPMDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPMDView.m; sourceTree = "<group>"; };
+		E9E7904E20BD462A007F89AC /* WCPMDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPMDView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +104,12 @@
 		E9E7900320B8F0A9007F89AC /* paomadeng */ = {
 			isa = PBXGroup;
 			children = (
+				E9E7904E20BD462A007F89AC /* WCPMDView.h */,
+				E9E7904D20BD4629007F89AC /* WCPMDView.m */,
 				E9E7900420B8F0A9007F89AC /* AppDelegate.h */,
 				E9E7900520B8F0A9007F89AC /* AppDelegate.m */,
 				E9E7900720B8F0A9007F89AC /* ViewController.h */,
 				E9E7900820B8F0A9007F89AC /* ViewController.m */,
-				E9E7903620B8F129007F89AC /* PaoMaDengView.h */,
-				E9E7903720B8F129007F89AC /* PaoMaDengView.m */,
 				E9E7900A20B8F0A9007F89AC /* Main.storyboard */,
 				E9E7900D20B8F0AB007F89AC /* Assets.xcassets */,
 				E9E7900F20B8F0AB007F89AC /* LaunchScreen.storyboard */,
@@ -268,9 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E7900920B8F0A9007F89AC /* ViewController.m in Sources */,
-				E9E7903820B8F129007F89AC /* PaoMaDengView.m in Sources */,
 				E9E7901420B8F0AB007F89AC /* main.m in Sources */,
 				E9E7900620B8F0A9007F89AC /* AppDelegate.m in Sources */,
+				E9E7904F20BD462A007F89AC /* WCPMDView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
